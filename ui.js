@@ -126,7 +126,7 @@ await checkIfLoggedIn();
      $(".articles-container").on("click", ".star", async function(evt) {
          if (currentUser) {
              const $tgt = $(evt.target);
-             const $closestLi = $tgt.$closest("li");
+             const $closestLi = $tgt.closest("li");
              const storyId = $closestLi.attr("id");
 
              // if the item is already favorited
