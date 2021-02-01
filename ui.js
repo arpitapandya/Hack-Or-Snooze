@@ -149,7 +149,7 @@ await checkIfLoggedIn();
     $navLogin.on("click", function() {
         // show the login and Create Account Forms
         $loginForm.slideToggle();
-        $createAccountForm.slidetoggle();
+        $createAccountForm.slideToggle();
         $allStoriesList.toggle();
     });
 

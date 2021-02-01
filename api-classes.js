@@ -152,7 +152,7 @@ static async login(username, password) {
 
           // Instanciate story instances for the user's favorites and ownStories
           existingUser.favorites = response.data.user.favorites.map(s => new Story(s));
-          existingUser.ownStories = response.data.user.ownStories.map(s => new Story(s));
+          existingUser.ownStories = response.data.user.stories.map(s => new Story(s));
 
           // Attach the token to the newUser instance for convenience
           existingUser.loginToken = response.data.token;
