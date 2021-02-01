@@ -181,7 +181,7 @@ static async getLoggedInUser(token, username) {
 
           // instantiate Story instances for the user's favorite and ownStories
           existingUser.favorites = response.data.user.favorites.map(s => new Story(s));
-          existingUser.ownStories = response.data.user.ownStories.map(s => new Story(s));
+          existingUser.ownStories = response.data.user.stories.map(s => new Story(s));
           
           return existingUser;
         }
